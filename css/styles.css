@@ -17,7 +17,7 @@
   --h4_font_size: clamp(1.25rem, 6vw, 1.5rem);
   --tags_font_size: 0.9rem;
   --regular_text_font_size: clamp(1rem, 3vw, 1.25rem);
-  --button_font_size: 1.06rem;
+  --button_font_size: 1.6rem;
   --list_item_font_size: 1.38rem;  
 }
 
@@ -239,7 +239,13 @@ main p {
   margin-bottom: 0.5rem;
 }
 
-#Program span {
+#see_benefits {
+  display: none;
+  text-decoration: underline;
+  color: white;
+}
+
+.underline {
   display: block;
   height: 2px;
   width: 5%;
@@ -248,7 +254,7 @@ main p {
   margin-bottom: 2.5rem;
 }
 
-#Program a {
+#see_benefits a {
   color: white;
   font-size: var(--h4_font_size);
   text-decoration: underline;
@@ -259,6 +265,7 @@ main p {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 1.5rem;  
   width: 100%;
+  margin-bottom: 4rem;
 }
 
 .card {
@@ -281,7 +288,7 @@ main p {
 }
 
 @media(min-width: 768px){
-  #Program{
+  #Program {
     padding: 2rem 0;
   }
 
@@ -289,4 +296,60 @@ main p {
     width: 85%;
     margin-inline: auto;
   }
+
+  #Bands {
+    padding: 2rem 0;
+  }
+
+  #see_benefits {
+    display: contents;
+  }
+
+}
+
+@media(max-width: 454px){
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+#Bands {
+  height: fit-content;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+#Bands h3 {
+  color: var(--gray);
+  font-family: var(--lato);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+#buy_btn {
+    display: block;
+    background-color: #ff4f38;
+    width: fit-content;
+    padding: 2rem;
+    margin-inline: auto;
+    color: white;
+}
+@media(min-width: 768px){
+  #buy_btn {
+    display: none;
+  }
+  .container {
+    padding: 2rem 6rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.container { 
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  height: fit-content;
 }
