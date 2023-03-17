@@ -18,7 +18,7 @@
   --tags_font_size: 0.9rem;
   --regular_text_font_size: clamp(1rem, 3vw, 1.25rem);
   --button_font_size: 1.6rem;
-  --list_item_font_size: 1.38rem;  
+  --list_item_font_size: 1.38rem;
 }
 
 body {
@@ -43,7 +43,7 @@ body {
   font-size: var(--h3_font_size);
   color: var(--gray);
   font-family: var(--cocogoose);
-  font-weight: lighter;  
+  font-weight: lighter;
 }
 
 .text_styles h4 {
@@ -80,8 +80,8 @@ body {
 }
 
 .action_bar {
-  background-color: #3E3E3E;
-  padding: 0.25rem 6rem;  
+  background-color: #3e3e3e;
+  padding: 0.25rem 6rem;
   display: none;
   gap: 1rem;
   align-items: center;
@@ -120,6 +120,7 @@ body {
   color: var(--orange);
   font-weight: bold;
 }
+
 .nav-menu {
   display: none;
   flex-direction: column;
@@ -138,7 +139,7 @@ body {
   list-style: none;
   border-bottom: solid 1px gray;
 }
-
+/* stylelint-disable no-descending-specificity */
 .nav-item a {
   font-size: 1.5rem;
   font-weight: bold;
@@ -181,6 +182,7 @@ body {
   transition: transform 0.3s;
   transition-timing-function: ease-out;
 }
+
 /**** Media Query ****/
 @media (min-width: 768px) {
   .action_bar {
@@ -214,25 +216,24 @@ body {
   }
 }
 
-/* Main Section*/
+/* Main Section */
 main {
   background-image: url("../images/background_mobile.png");
   background-position: top;
-  background-size:contain;
+  background-size: contain;
   background-repeat: no-repeat;
   padding: 5rem 1rem;
 }
 
-
 .main_text h1 {
   line-height: 4.5rem;
   background-image: url('../images/background_orange.jpg');
-	background-color: orangered;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  background-color: orangered;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .main_text h2 {
@@ -246,18 +247,18 @@ main {
   border: solid white 4px;
 }
 
-
-@media(min-width: 768px){
+@media (min-width: 768px) {
   main {
     padding: 5rem 6rem;
     background-image: url("../images/background.png");
   }
 
   .main_text {
-  width: 80%;
-  margin-inline: auto; 
+    width: 80%;
+    margin-inline: auto;
   }
 }
+
 /* Benefits Section */
 #Program {
   background-image: url("../images/wavey.svg");
@@ -299,7 +300,7 @@ main {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 1.5rem;  
+  grid-gap: 1.5rem;
   width: 100%;
   margin-bottom: 4rem;
 }
@@ -308,6 +309,7 @@ main {
   background-color: rgba(60, 63, 70, 0.603);
   padding: 1rem;
 }
+
 .card img {
   width: 60px;
 }
@@ -323,7 +325,7 @@ main {
   font-size: 1.2rem;
 }
 
-@media(min-width: 768px){
+@media (min-width: 768px) {
   #Program {
     padding: 2rem 6rem;
   }
@@ -331,10 +333,9 @@ main {
   #see_benefits {
     display: contents;
   }
-
 }
 
-@media(max-width: 454px){
+@media (max-width: 454px) {
   .card {
     display: flex;
     align-items: center;
@@ -361,23 +362,25 @@ main {
 }
 
 #buy_btn {
-    display: block;
-    background-color: #ff4f38;
-    width: fit-content;
-    padding: 2rem;
-    margin-inline: auto;
-    color: white;
+  display: block;
+  background-color: #ff4f38;
+  width: fit-content;
+  padding: 2rem;
+  margin-inline: auto;
+  color: white;
 }
-@media(min-width: 768px){
+
+@media (min-width: 768px) {
   #Bands {
     padding: 2rem 6rem;
   }
+
   #buy_btn {
     display: none;
   }
 }
 
-.container { 
+.container {
   padding: 2rem 1rem;
   display: grid;
   grid-template-columns: 1fr;
@@ -399,7 +402,7 @@ main {
 
 .text_wrap em {
   color: var(--orange);
-  font-weight: bold;  
+  font-weight: bold;
 }
 
 .text_wrap p {
@@ -425,7 +428,7 @@ main {
   color: var(--gray);
 }
 
-#more_button:hover{
+#more_button:hover {
   cursor: pointer;
 }
 
@@ -433,7 +436,7 @@ main {
   cursor: pointer;
 }
 
-@media(min-width: 768px){
+@media (min-width: 768px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -447,7 +450,7 @@ main {
   }
 }
 
-/* Sponsors Section*/
+/* Sponsors Section */
 #Sponsors {
   background-color: #414246;
   height: fit-content;
@@ -473,7 +476,7 @@ main {
   width: 100px;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   #Sponsors {
     padding: 2rem 4rem;
   }
@@ -498,7 +501,8 @@ footer img {
 footer h3 {
   color: var(--gray);
 }
-@media(min-width: 768px) {
+
+@media (min-width: 768px) {
   footer {
     padding: 3rem 6rem;
     gap: 4rem;

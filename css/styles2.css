@@ -18,7 +18,7 @@
   --tags_font_size: 0.9rem;
   --regular_text_font_size: clamp(1rem, 3vw, 1.25rem);
   --button_font_size: 1.6rem;
-  --list_item_font_size: 1.38rem;  
+  --list_item_font_size: 1.38rem;
 }
 
 body {
@@ -43,7 +43,7 @@ body {
   font-size: var(--h3_font_size);
   color: var(--gray);
   font-family: var(--lato);
-  font-weight: bold;  
+  font-weight: bold;
 }
 
 .text_styles h4 {
@@ -80,8 +80,8 @@ body {
 }
 
 .action_bar {
-  background-color: #3E3E3E;
-  padding: 0.25rem 6rem;  
+  background-color: #3e3e3e;
+  padding: 0.25rem 6rem;
   display: none;
   gap: 1rem;
   align-items: center;
@@ -120,6 +120,7 @@ body {
   color: var(--orange);
   font-weight: bold;
 }
+
 .nav-menu {
   display: none;
   flex-direction: column;
@@ -138,7 +139,7 @@ body {
   list-style: none;
   border-bottom: solid 1px gray;
 }
-
+/* stylelint-disable no-descending-specificity */
 .nav-item a {
   font-size: 1.5rem;
   font-weight: bold;
@@ -181,6 +182,7 @@ body {
   transition: transform 0.3s;
   transition-timing-function: ease-out;
 }
+
 /**** Media Query ****/
 @media (min-width: 768px) {
   .action_bar {
@@ -223,7 +225,8 @@ body {
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
-/* Main Section*/
+
+/* Main Section */
 main {
   background-image: url("../images/background_mobile.png");
   background-position: top;
@@ -233,14 +236,15 @@ main {
   text-align: center;
 }
 
-main a{
+main a {
   text-decoration: underline;
 }
 
-main h1  {
+main h1 {
   line-height: 4.5rem;
   color: var(--orange);
 }
+
 main p {
   background: white;
   padding: 1rem;
@@ -250,12 +254,14 @@ main p {
   background: none;
   margin-top: 2rem;
 }
-@media(min-width: 768px){
+
+@media (min-width: 768px) {
   main {
     padding: 5rem 10rem;
     background-image: url("../images/background.png");
   }
 }
+
 /* Logo section */
 #logo_history {
   padding: 5rem 1rem;
@@ -267,7 +273,7 @@ main p {
   margin-bottom: 3rem;
 }
 
-@media(min-width: 768px){
+@media (min-width: 768px) {
   #logo_history {
     padding: 5rem 10rem;
   }
@@ -279,11 +285,13 @@ main p {
   padding: 5rem 1rem;
   text-align: center;
 }
-@media(min-width: 768px){
+
+@media (min-width: 768px) {
   #previous_fest {
     padding: 5rem 10rem;
   }
 }
+
 .img_container {
   display: flex;
   flex-direction: column;
@@ -297,7 +305,7 @@ main p {
   width: 100%;
 }
 
-@media(min-width: 768px){
+@media (min-width: 768px) {
   .img_container {
     flex-direction: row;
     gap: 1rem;
@@ -306,10 +314,9 @@ main p {
   .img_container img {
     width: 48%;
   }
-
 }
 
-/* Sponsors Section*/
+/* Sponsors Section */
 #Sponsors {
   background-color: #414246;
   height: fit-content;
@@ -335,7 +342,7 @@ main p {
   width: 100px;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   #Sponsors {
     padding: 2rem 4rem;
   }
@@ -359,7 +366,8 @@ footer img {
 footer h3 {
   color: var(--gray);
 }
-@media(min-width: 768px) {
+
+@media (min-width: 768px) {
   footer {
     padding: 3rem 6rem;
     gap: 4rem;
