@@ -17,14 +17,21 @@
   <!-- Nav Bar -->
 
   <header>
+    <div class="action_bar">
+      <span><img src="images/facebook.svg" alt="facebook"></span>
+      <span><img src="images/twitter.svg" alt="twitter"></span>
+      <span>English</span>
+      <span>My page</span>
+      <span>Logout</span>
+    </div>
     <nav class="nav-bar text_styles">
-      <div class="nav_title"><a href="index.html">Indie Music Fest</a></div>
+      <div class="nav_title"><a href="index.html"><img src="images/logo.png" alt="logo" id="logo"></a></div>
       <ul class="nav-menu">
         <li class="nav-item"><a href="#About">About</a></li>
-        <li class="nav-item"><a href="#Program">Program</a></li>
-        <li class="nav-item"><a href="#">Sponsor</a></li>
-        <li class="nav-item"><a href="#">News</a></li>
-        <li class="nav-item"><a href="#">Buy Tickets</a></li>
+        <li class="nav-item"><a href="#Program">Benefits</a></li>
+        <li class="nav-item"><a href="#Bands">Bands</a></li>
+        <li class="nav-item"><a href="#Sponsors">Sponsors</a></li>
+        <li class="nav-item" id="buy_tickets"><a href="#">Buy Tickets</a></li>
       </ul>
       <a href="#" class="toggle-button"
         ><img class="icon" src="images/BurgerButton.svg" alt="toggle Button"
@@ -36,12 +43,13 @@
   </header>
 <!-- Main Section -->
   <main class="text_styles">
-    <h2>Hello, awesome people </h2>
-    <h1>Indie Music</h1>
-    <h1>Annual Fest 2023</h1>
+    <div class="main_text">
+    <h2>Hello, people! </h2>
+    <h1>Indie Music Annual Fest 2023</h1>
     <p>Indie Music Fest is the perfect place to discover the best of indie music. Enjoy an unforgettable experience with the best bands, DJs, and artists from around the world. Come join us for an unforgettable experience!</p>
     <h3>April 1st to April 7th</h3>
     <h4>West Bay Beach, Bay Islands</h4>
+    </div>    
   </main>
   <!-- Program Section -->
   <section id="Program" class="text_styles">
@@ -82,9 +90,31 @@
     <h3>Featured Bands</h3>
     <span class="underline"></span>
     <div class="container"></div>
-    <a href="#" id="more_button" class="more_button">More</a>
-    <a href="#" id="less_button" class="less_button">Less</a>
+    <span id="more_button" class="more_button">More</span>
+    <span id="less_button" class="less_button">Less</span>
   </section>
+<!-- Sponsors -->
+  <section id="Sponsors" class="text_styles">
+    <h3>Sponsors</h3>
+    <span class="underline"></span>
+    <div class="img_container">
+      <img src="images/mozilla.png" alt="Mozilla logo">
+      <img src="images/google.png" alt="Google logo">
+      <img src="images/naver.png" alt="Naver Logo">
+      <img src="images/daumkakao.png" alt="daumkakao logo">
+      <img src="images/airbnb.png" alt="airbnb logo">
+    </div>
+  </section>
+<!-- Footer -->
+<footer>
+  <img src="images/logo.png" alt="Logo">
+  <div>
+    <h3>2023 Creative Commons</h3>
+    <h3>Some rights reserved</h3>
+    <p>달리 정하지 않은 웹사이트의 모든 내용은 크리에이티브 커먼즈 저작자표시 2.0 대한민국 라이선스에 따라 이용할 수 있습니다.
+      자세한 이용기능 내용과 허락조건은 http://creativecommons.org/licences/by/2.0/kr 를 보세요.</p>
+  </div>  
+</footer>  
 <!-- Javascript -->
 <script src="script.js"></script>
 </body>
