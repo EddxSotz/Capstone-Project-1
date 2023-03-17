@@ -335,16 +335,17 @@ main p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 .logo_container img {
-  width: 100px;
+  width: 120px;
 }
 
 @media (min-width: 768px) {
   #Sponsors {
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
   }
 }
 

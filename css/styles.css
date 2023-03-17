@@ -300,7 +300,7 @@ main {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 1.5rem;
+  grid-gap: 1rem;
   width: 100%;
   margin-bottom: 4rem;
 }
@@ -308,6 +308,11 @@ main {
 .card {
   background-color: rgba(60, 63, 70, 0.603);
   padding: 1rem;
+  border: solid 3px rgba(60, 63, 70, 0.603);
+}
+
+.card:hover {
+  border-color: white;
 }
 
 .card img {
@@ -469,16 +474,17 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 .img_container img {
-  width: 100px;
+  width: 120px;
 }
 
 @media (min-width: 768px) {
   #Sponsors {
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
   }
 }
 
