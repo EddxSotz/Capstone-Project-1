@@ -25,7 +25,7 @@
 <!-- PROJECT DESCRIPTION -->
 
 
-# 📖 Personal Portfolio<a name="about-project"></a>
+# 📖 Music Festival capstone project<a name="about-project"></a>
 
 
 First Capstone project part of the Microverse Curriculum. Built with no Linter errors, correct GitHub Flow and properly documented. 
