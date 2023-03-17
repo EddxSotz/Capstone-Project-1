@@ -11,7 +11,7 @@
   --gray: #272a31;
   --cocogoose: 'COCOGOOSE', sans-serif;
   --lato: 'Lato', sans-serif;
-  --main_title_size: clamp(3.5rem, 8vw, 4.5rem);
+  --main_title_size: clamp(3rem, 6vw, 4rem);
   --h2_font_size: 2.5rem;
   --h3_font_size: clamp(1.5rem, 8vw, 2rem);
   --h4_font_size: clamp(1.25rem, 6vw, 1.5rem);
@@ -42,8 +42,8 @@ body {
 .text_styles h3 {
   font-size: var(--h3_font_size);
   color: var(--gray);
-  font-family: var(--cocogoose);
-  font-weight: lighter;  
+  font-family: var(--lato);
+  font-weight: bold;  
 }
 
 .text_styles h4 {
@@ -214,237 +214,99 @@ body {
   }
 }
 
+.underline {
+  display: block;
+  height: 4px;
+  width: 8%;
+  background-color: var(--orange);
+  margin-inline: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
 /* Main Section*/
 main {
   background-image: url("../images/background_mobile.png");
   background-position: top;
-  background-size:contain;
+  background-size: contain;
   background-repeat: no-repeat;
   padding: 5rem 1rem;
+  text-align: center;
 }
 
+main a{
+  text-decoration: underline;
+}
 
-.main_text h1 {
+main h1  {
   line-height: 4.5rem;
-  background-image: url('../images/background_orange.jpg');
-	background-color: orangered;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  color: var(--orange);
 }
-
-.main_text h2 {
-  margin-bottom: 1rem;
-}
-
-.main_text p {
-  margin: 1.5rem 0;
-  background: #f8f8f8;
+main p {
+  background: white;
   padding: 1rem;
-  border: solid white 4px;
 }
 
-
+.contact_text {
+  background: none;
+  margin-top: 2rem;
+}
 @media(min-width: 768px){
   main {
-    padding: 5rem 6rem;
+    padding: 5rem 10rem;
     background-image: url("../images/background.png");
   }
-
-  .main_text {
-  width: 80%;
-  margin-inline: auto; 
-  }
 }
-/* Benefits Section */
-#Program {
-  background-image: url("../images/wavey.svg");
-  background-size: cover;
-  background-repeat: repeat-y;
-  height: fit-content;
+/* Logo section */
+#logo_history {
+  padding: 5rem 1rem;
   text-align: center;
-  padding: 2rem 1rem;
+  background-color: white;
 }
 
-#Program h3 {
-  color: white;
-  font-family: var(--lato);
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-#see_benefits {
-  display: none;
-  text-decoration: underline;
-  color: white;
-}
-
-.underline {
-  display: block;
-  height: 2px;
-  width: 5%;
-  background-color: var(--orange);
-  margin-inline: auto;
-  margin-bottom: 2.5rem;
-}
-
-#see_benefits a {
-  color: white;
-  font-size: var(--h4_font_size);
-  text-decoration: underline;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 1.5rem;  
-  width: 100%;
-  margin-bottom: 4rem;
-}
-
-.card {
-  background-color: rgba(60, 63, 70, 0.603);
-  padding: 1rem;
-}
-.card img {
-  width: 60px;
-}
-
-.card h4 {
-  color: var(--orange);
-  font-weight: bold;
-  margin: 1rem 0;
-}
-
-.card p {
-  color: white;
-  font-size: 1.2rem;
+#logo_history p {
+  margin-bottom: 3rem;
 }
 
 @media(min-width: 768px){
-  #Program {
-    padding: 2rem 6rem;
+  #logo_history {
+    padding: 5rem 10rem;
   }
-
-  #see_benefits {
-    display: contents;
-  }
-
 }
 
-@media(max-width: 454px){
-  .card {
-    display: flex;
-    align-items: center;
+/* Previous festival */
+
+#previous_fest {
+  padding: 5rem 1rem;
+  text-align: center;
+}
+@media(min-width: 768px){
+  #previous_fest {
+    padding: 5rem 10rem;
+  }
+}
+.img_container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.img_container img {
+  width: 100%;
+}
+
+@media(min-width: 768px){
+  .img_container {
+    flex-direction: row;
     gap: 1rem;
   }
 
-  #Program {
-    text-align: left;
-  }
-}
-
-/* Bands Section */
-#Bands {
-  height: fit-content;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-#Bands h3 {
-  color: var(--gray);
-  font-family: var(--lato);
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-#buy_btn {
-    display: block;
-    background-color: #ff4f38;
-    width: fit-content;
-    padding: 2rem;
-    margin-inline: auto;
-    color: white;
-}
-@media(min-width: 768px){
-  #Bands {
-    padding: 2rem 6rem;
-  }
-  #buy_btn {
-    display: none;
-  }
-}
-
-.container { 
-  padding: 2rem 1rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2rem;
-  height: fit-content;
-}
-
-.card_content {
-  display: none;
-  flex-direction: row;
-  gap: 1rem;
-  text-align: left;
-}
-
-.text_wrap h4 {
-  color: black;
-  margin-bottom: 0.75rem;
-}
-
-.text_wrap em {
-  color: var(--orange);
-  font-weight: bold;  
-}
-
-.text_wrap p {
-  font-size: 1rem;
-  margin-top: 0.75rem;
-}
-
-#more_button {
-  display: none;
-  border: solid 2px gray;
-  width: 100%;
-  padding: 1rem 0;
-  font-size: var(--button_font_size);
-  color: var(--gray);
-}
-
-#less_button {
-  border: solid 2px gray;
-  display: none;
-  width: 100%;
-  padding: 1rem 0;
-  font-size: var(--button_font_size);
-  color: var(--gray);
-}
-
-#more_button:hover{
-  cursor: pointer;
-}
-
-#less_button:hover {
-  cursor: pointer;
-}
-
-@media(min-width: 768px){
-  .container {
-    grid-template-columns: repeat(2, 1fr);
+  .img_container img {
+    width: 48%;
   }
 
-  .card_content {
-    display: flex;
-  }
-
-  #more_button {
-    display: none;
-  }
 }
 
 /* Sponsors Section*/
@@ -462,14 +324,14 @@ main {
   margin-bottom: 0.5rem;
 }
 
-.img_container {
+.logo_container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.img_container img {
+.logo_container img {
   width: 100px;
 }
 
@@ -480,7 +342,6 @@ main {
 }
 
 /* Footer */
-
 footer {
   padding: 3rem 1rem;
   display: flex;
