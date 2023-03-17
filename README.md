@@ -30,6 +30,8 @@
 
 First Capstone project part of the Microverse Curriculum. Built with no Linter errors, correct GitHub Flow and properly documented. 
 
+ <a href = "https://www.loom.com/share/6ef1849f4b0d49f2b4fe7527b83f84d6">Loom video </a>describing project 
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
